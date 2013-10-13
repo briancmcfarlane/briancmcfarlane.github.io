@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brian C. McFarlane - Web Developer</title>
+    <meta name="description" content="Drupal and Wordpress theme development, cross-browser support, and touch-friendly interfaces.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% stylesheet normalize %}
+    {% stylesheet main %}
+    {% javascript vendor/modernizr-2.6.2.min.js %}
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <img class="avatar" alt="Brian C. McFarlane" src="{{ 'me@briancmcfarlane.com' | to_gravatar }}?s=200&d=mm">
+        <section role="main">
+          <h1 class="title">Brian C. McFarlane</h1>
+          <p>Hello. I am a web developer.</p>
+          <p>My focus is Drupal and Wordpress theme development, cross-browser support, and touch-friendly interfaces.</p>
+        </section>
+      </header>
+      <article>
+        <header>
+          <h1>Recent Projects</h1>
+        </header>
+        <div class="project-list">
+          <section>
+            <h2><a rel="external" href="http://e-challenge.net">E-Challenge for Energy Efficiency</a></h2>
+            <p>Drupal Theme development</p>
+          </section>
+          <section>
+            <h2><a rel="external" href="http://www.balancingincentiveprogram.org">Balancing Incentive Program</a></h2>
+            <p>Drupal Theme Development</p>
+          </section>
+          <section>
+            <h2><a rel="external" href="http://www.cinetopiafestival.org">Cinetopia International Film Festival</a></h2>
+            <p>Wordpress Theme Customization</p>
+          </section>
+          <section>
+            <h2><a rel="external" href="http://elpl.org">East Lansing Public Library</a></h2>
+            <p>Front-End Development</p>
+          </section>
+          <section>
+            <h2><a rel="external" href="http://www.foresee.com">ForeSee</a></h2>
+            <p>Front-End Development</p>
+          </section>
+          <section>
+            <h2><a rel="external" href="http://theicct.org">The International Council on Clean Energy Transportation</a></h2>
+            <p>Front-End Development</p>
+          </section>
+          <section>
+            <h2><a rel="external" href="http://www.umtri.umich.edu">University of Michigan - Transportation Research Institute</a></h2>
+            <p>Front-End Development</p>
+          </section>
+        </div>
+      </article>
+      <aside role="complementary">
+        <h1>Contact Information</h1>
+        <p>Send me an email at <a href="mailto:me@briancmcfarlane.com">me@briancmcfarlane.com</a>, browse my code at <a rel="external" href="https://github.com/briancmcfarlane">GitHub</a>, follow my messages on <a rel="external" href="https://twitter.com/briancmcfarlane">Twitter</a>, and hire me at <a rel="external" href="https://www.linkedin.com/in/briancmcfarlane">LinkedIn</a>.</p>
+      </aside>
+      <footer class="page-footer" role="contentinfo">
+        &copy;&nbsp;2009&ndash;2013&nbsp;Brian&nbsp;C.&nbsp;McFarlane
+      </footer>
+    </div>
+
+    {% javascript vendor/jquery-1.10.2.min.js %}
+    {% javascript plugins.js %}
+    {% javascript main.js %}
+    <script>
+      // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      //   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      // e.src='//www.google-analytics.com/analytics.js';
+      // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      // ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>

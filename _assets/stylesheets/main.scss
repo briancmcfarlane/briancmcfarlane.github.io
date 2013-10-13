@@ -1,0 +1,78 @@
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+
+$base-size: 16px;
+$bodyColor: #f3f2f4;
+$bodyText: #333;
+$highlightColor: #feed01;
+
+body {
+  font-family: $helvetica;
+  font-size: $base-size;
+  color: $bodyText;
+  background: $bodyColor;
+}
+
+a {
+  background: $highlightColor;
+  text-decoration: none;
+  color: $bodyText;
+}
+
+a:hover {
+  background: none;
+}
+
+h1 {
+  font-size: golden-ratio($base-size, 1);
+}
+
+h2 {
+  font-size: $base-size;
+}
+
+.title {
+  font-size: golden-ratio($base-size, 2);
+  margin-top: 0;
+}
+
+.page {
+  @include outer-container;
+  @include pad();
+}
+
+.avatar {
+  @include span-columns(2);
+  @include media($tablet) {
+    display: none;
+  }
+}
+
+section[role="main"] {
+  @include span-columns(10);
+}
+
+.page-header {
+  @include outer-container;
+}
+
+.project-list {
+  @include outer-container;
+  @include pad();
+  background: lighten($bodyColor, 10%);
+}
+
+.project-list section {
+  @include span-columns(3);
+  @include omega(4n);
+
+  @include media($tablet) {
+    @include span-columns(4);
+    @include omega(2n);
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}

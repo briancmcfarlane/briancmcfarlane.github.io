@@ -1,0 +1,8 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+destination: public
+
+assets:
+  js_compressor: uglifier
+  css_compressor: sass
