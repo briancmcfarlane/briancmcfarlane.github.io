@@ -1,4 +1,5 @@
 {% include header.html %}
+
 <header class="page-header">
   <img class="avatar" alt="Brian C. McFarlane" src="{{ 'me@briancmcfarlane.com' | to_gravatar }}?s=200&d=mm">
   <section role="main">
@@ -7,43 +8,12 @@
     <p>My focus is Drupal and Wordpress theme development, cross-browser support, and touch-friendly interfaces.</p>
   </section>
 </header>
-<article>
-  <header>
-    <h1>Recent Projects</h1>
-  </header>
-  <div class="project-list">
-    <section>
-      <h2><a rel="external" href="http://e-challenge.net">E-Challenge for Energy Efficiency</a></h2>
-      <p>Drupal Theme Development</p>
-    </section>
-    <section>
-      <h2><a rel="external" href="http://www.balancingincentiveprogram.org">Balancing Incentive Program</a></h2>
-      <p>Drupal Theme Development</p>
-    </section>
-    <section>
-      <h2><a rel="external" href="http://www.cinetopiafestival.org">Cinetopia International Film Festival</a></h2>
-      <p>Wordpress Theme Customization</p>
-    </section>
-    <section>
-      <h2><a rel="external" href="http://elpl.org">East Lansing Public Library</a></h2>
-      <p>Front-End Development</p>
-    </section>
-    <section>
-      <h2><a rel="external" href="http://www.foresee.com">ForeSee</a></h2>
-      <p>Front-End Development</p>
-    </section>
-    <section>
-      <h2><a rel="external" href="http://theicct.org">The International Council on Clean Energy Transportation</a></h2>
-      <p>Front-End Development</p>
-    </section>
-    <section>
-      <h2><a rel="external" href="http://www.umtri.umich.edu">University of Michigan - Transportation Research Institute</a></h2>
-      <p>Front-End Development</p>
-    </section>
-  </div>
-</article>
+
+{{ content }}
+
 <aside role="complementary">
   <h1>Contact Information</h1>
   <p>Send me an email at <a href="mailto:me@briancmcfarlane.com">me@briancmcfarlane.com</a>, browse my code at <a rel="external" href="https://github.com/briancmcfarlane">GitHub</a>, follow my messages on <a rel="external" href="https://twitter.com/briancmcfarlane">Twitter</a>, and hire me at <a rel="external" href="https://www.linkedin.com/in/briancmcfarlane">LinkedIn</a>.</p>
 </aside>
+
 {% include footer.html %}
