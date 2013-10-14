@@ -3,26 +3,25 @@
 @import "neat/neat";
 
 $base-size: 16px;
-$bodyColor: #f3f2f4;
-$bodyText: #333;
-$highlightColor: #0486c0;
+$bodyBackground: #ffffff;
+$highlightBackground: #e8e8e8;
+$bodyColor: #2b2a2b;
+$highlightColor: #41a693;
 
 body {
   font-family: 'Open Sans',$helvetica;
   font-size: $base-size;
-  color: $bodyText;
-  background: $bodyColor;
+  color: $bodyColor;
+  background: $bodyBackground;
 }
 
 a {
-  // background: $highlightColor;
   color: $highlightColor;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
-  // background: none;
-  color: lighten($highlightColor, 20%);
+  text-decoration: underline;
 }
 
 h1 {
@@ -72,9 +71,8 @@ section[role="main"] {
 .project-list {
   @include outer-container;
   @include pad();
-  background: lighten($bodyColor, 10%);
+  background: $highlightBackground;
   border-radius: 4px;
-  border: 1px solid #bbb;
 }
 
 .project-list section {
