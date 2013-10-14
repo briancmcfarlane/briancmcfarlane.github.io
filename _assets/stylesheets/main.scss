@@ -54,6 +54,7 @@ img {
 }
 
 .avatar {
+  border-radius: 80px;
   @include span-columns(2);
   @include media($tablet) {
     display: none;
