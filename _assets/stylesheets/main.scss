@@ -8,7 +8,7 @@ $bodyText: #333;
 $highlightColor: #0486c0;
 
 body {
-  font-family: $helvetica;
+  font-family: 'Open Sans',$helvetica;
   font-size: $base-size;
   color: $bodyText;
   background: $bodyColor;
@@ -27,10 +27,17 @@ a:hover {
 
 h1 {
   font-size: golden-ratio($base-size, 1);
+  font-family: 'Oswald', $helvetica;
 }
 
 h2 {
   font-size: $base-size;
+  font-style: italic;
+  margin: 0;
+}
+
+h2+p {
+  margin-top: 0;
 }
 
 img {
