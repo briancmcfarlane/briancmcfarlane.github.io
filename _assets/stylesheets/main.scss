@@ -79,6 +79,8 @@ section[role="main"] {
   section {
     @include span-columns(3);
     @include omega(4n);
+    margin-top: 1em;
+    margin-bottom: 1em;
 
     @include media($tablet) {
       @include span-columns(4);
