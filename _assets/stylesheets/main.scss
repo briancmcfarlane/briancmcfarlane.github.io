@@ -41,6 +41,7 @@ h2+p {
 
 img {
   border-radius: 4px;
+  max-width: 100%;
 }
 
 .title {
@@ -74,18 +75,18 @@ section[role="main"] {
   @include pad();
   background: $highlightBackground;
   border-radius: 4px;
-}
 
-.project-list section {
-  @include span-columns(3);
-  @include omega(4n);
+  section {
+    @include span-columns(3);
+    @include omega(4n);
 
-  @include media($tablet) {
-    @include span-columns(4);
-    @include omega(2n);
-  }
+    @include media($tablet) {
+      @include span-columns(4);
+      @include omega(2n);
+    }
 
-  @include media($mobile) {
-    @include span-columns(4);
+    @include media($mobile) {
+      @include span-columns(4);
+    }
   }
 }
