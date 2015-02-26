@@ -1,0 +1,1 @@
+jQuery(document).ready(function(n){n('a[rel="external"]').on("click",function(){var e=n(this).attr("href");return window.open(e,"_blank"),!1})});
